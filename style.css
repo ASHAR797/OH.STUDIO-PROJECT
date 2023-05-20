@@ -1,0 +1,267 @@
+@font-face {
+    font-family: 'NeueMontreal-Regular';
+    src: url(./font-folder/NeueMontreal-Regular.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'NeueMontreal-Regular';
+    font-weight: 500;
+}
+
+/* Start Navbar and Header */
+.nav {
+    position: sticky;
+    top: 20px;
+}
+
+.main-nav-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ul-nav {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 2.9em;
+    width: 18.75em;
+    background-color: #e8e5e480;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+
+.li-nav {
+    font-size: 14px;
+}
+
+.li-nav:hover {
+    background-color: white;
+    padding: 16px;
+    transition: .2s;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* End Navbar and Header */
+/* MAIN AND SECTION - 1 START */
+.main-starter-heading {
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    height: 35em;
+}
+
+.main-starter-heading h1 {
+    width: 12em;
+    font-size: 72px;
+}
+
+.ul-main {
+    display: flex;
+    justify-content: space-evenly;
+    width: 30em;
+}
+
+.li-main-back-color {
+    list-style: none;
+    background-color: #d6d5d580;
+    border-radius: 20px;
+    padding: 10px;
+    font-family: 'NeueMontreal-Regular';
+}
+
+.li-main {
+    padding: 10px;
+    font-family: 'NeueMontreal-Regular';
+    list-style: none;
+}
+
+/* SECTION - 2 START */
+.main-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 38px;
+}
+
+.images img {
+    width: 40em;
+    border-radius: 21px;
+    height: 29em;
+    margin-left: 20px;
+    opacity: .9;
+    filter: blur(12px);
+}
+
+.images img:hover {
+    opacity: 1;
+    filter: blur(0px);
+    transition: .6s;
+}
+
+.images video {
+    width: 40em;
+    border-radius: 20px;
+    height: 29em;
+    margin-left: 20px;
+    opacity: .9;
+    filter: blur(12px);
+}
+
+.images video:hover {
+    opacity: 1;
+    filter: blur(0px);
+    transition: .4s;
+    border-radius: 20px;
+}
+
+/* SECTION - 3 START */
+.sec-3-heading {
+    height: 35em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sec-3-heading h1 {
+    font-size: 35px;
+    word-spacing: 2px;
+}
+
+.sec-3-heading span,
+a {
+    color: #9c9896;
+    text-decoration: none;
+}
+
+.sec-3-heading span:hover,
+a:hover {
+    color: #f0e5e5;
+    transition: .3s;
+}
+
+/* End Of Section = 3 + Main Content */
+/* Footer */
+.main-footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5em;
+}
+
+.main-footer-1 {
+    display: flex;
+    justify-content: space-evenly;
+    width: 23em;
+    padding-left: 30px;
+}
+
+.main-footer-1 h1 {
+    font-weight: lighter;
+    font-size: 23px;
+}
+
+.ul-footer {
+    display: flex;
+    padding-right: 60px;
+}
+
+.ul-footer a {
+    padding-left: 20px;
+    list-style: none;
+    font-family: 'NeueMontreal-Regular';
+    color: black;
+    text-decoration: none;
+}
+
+.ul-footer a:hover {
+    color: #9c9896;
+    transition: .2s;
+}
+
+.ul-footer li {
+    padding-left: 20px;
+    list-style: none;
+    font-family: 'NeueMontreal-Regular';
+}
+
+.ul-footer a:hover {
+    color: #9c9896;
+    transition: .4s;
+}
+
+/* Media Query Mobile */
+@media screen and (max-width:767px) {
+    .ul-nav {
+        height: 2.6em;
+    width: 14.75em;
+    }
+
+    .li-nav {
+        font-size: 10px;
+    }
+    .main-starter-heading h1 {
+        width: 8em;
+        font-size: 34px;
+    }
+    .ul-main {
+        display: none;
+    }
+    .main-starter-heading {
+        justify-content: center;
+        height: 20em;
+    }
+    /*  */
+    .main-images{
+        justify-content: center;
+        flex-direction: column;
+    }
+    .images img{
+        width: 17em;
+        height: 13em;
+    }
+    .images video {
+        width: 17em;
+        height: 13em;
+    }
+    .sec-3-heading h1 {
+        font-size: 24px;
+        word-spacing: 2px;
+    }
+    .sec-3-heading {
+        height: 20em;
+    }
+    .main-footer-1 h1 {
+        font-weight: lighter;
+        font-size: 11px;
+    }
+    .ul-footer a {
+        padding-left: 0px;
+        list-style: none;
+        font-family: 'NeueMontreal-Regular';
+        color: black;
+        text-decoration: none;
+    }
+    .ul-footer li{
+            font-size: 8px;
+            padding-left: 16px;
+            list-style: none;
+            font-family: 'NeueMontreal-Regular';
+            width: 47px;
+    }
+}
+@media screen and (max-width:) {
+    
+}
